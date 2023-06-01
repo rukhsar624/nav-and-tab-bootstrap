@@ -509,7 +509,7 @@ label.draganddrop input.file_input {
   color: #FFF;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path fill='%23838D99' d='M13.22 14.63a8 8 0 1 1 1.41-1.41l4.29 4.29a1 1 0 1 1-1.41 1.41l-4.29-4.29zm-.66-2.07a6 6 0 1 0-8.49-8.49 6 6 0 0 0 8.49 8.49z'></path></svg>");
   background-repeat: no-repeat;
-  background-position: 10px 10px;
+  background-position: 70px 10px;
   background-size: 20px 20px;
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08); */
   border-radius: 0px;
@@ -517,14 +517,9 @@ label.draganddrop input.file_input {
   width: 20%;
   background-color: transparent;
 }
-
 .input-elevated::placeholder {
   color: #FFF;
-}
-
-.input-elevated:focus {
-  /* outline: none;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16); */
+  text-align: center;
 }
 
 .input-inset {
@@ -815,10 +810,6 @@ label.draganddrop input.file_input {
   transition: .5s ease;
 }
 
-/* .vedioBg .card {
-  background-color: #fff !important;
-} */
-
 .play-font {
   width: 100%;
   position: absolute;
@@ -838,13 +829,13 @@ label.draganddrop input.file_input {
 }
 
 .play-font i {
-  font-size: 100px;
+  margin-top: 4.5rem;
+  font-size: 20px;
   color: #FFF;
   background: 0 0;
   border-radius: 50%;
-  padding: 25px 25px 19px 43px;
+  padding: 10px 10px 10px 14px;
   border: 3px solid #fff;
-  /* background-color: #fff; */
 }
 
 /*  */
