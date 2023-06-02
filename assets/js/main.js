@@ -21,10 +21,10 @@ $(window).scroll(function () {
       $("#navbar-fixed-top").css("box-shadow", "rgb(0 0 0 / 46%) 8px 8px 33px");
       $(".destop-nav-bar .header_links").css("color", "#fff");
       $(".destop-nav-bar .logo h1").css("color", "#ffffff");
-      // $(".destop-nav-bar .header_links.active").css(
-      //   "border-bottom",
-      //   "2px solid #9C6DA5"
-      // );
+      $(".destop-nav-bar .header_links.active").css(
+        "border-bottom",
+        "2px solid #9C6DA5"
+      );
       $(".hamburger div").css(
         "background", "#000"
       );
@@ -40,10 +40,10 @@ $(window).scroll(function () {
       $("#navbar-fixed-top").css("box-shadow", "none");
       $(".destop-nav-bar .header_links").css("color", "#fff");
       $(".destop-nav-bar .logo h1").css("color", "#1a1a1a");
-      // $(".destop-nav-bar .header_links.active").css(
-      //   "border-bottom",
-      //   "2px solid #9C6DA5"
-      // );
+      $(".destop-nav-bar .header_links.active").css(
+        "border-bottom",
+        "2px solid #9C6DA5"
+      );
       $(".hamburger div").css(
         "background", "red"
       );
