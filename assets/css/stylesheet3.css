@@ -246,8 +246,9 @@
 }
 
 .cstm-btn:hover {
-    background-color: transparent;
-    border: 1px solid #f5ebeb;
+    background-image: linear-gradient(red, yellow);
+    /* border: 1px solid #f5ebeb; */
+    border: none;
 
 }
 
@@ -281,7 +282,9 @@
     outline: none;
     border-radius: 50px;
 }
-
+.get-start:hover{
+    background-image: linear-gradient(red, yellow);
+}
 .btn-grad:hover {
     background-position: right center;
     /* change the direction of the change here */
