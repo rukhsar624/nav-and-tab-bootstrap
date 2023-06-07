@@ -6,12 +6,18 @@
 }
 
 .body {
+    background-color: #000000;
     /* background-image: linear-gradient(to right top, #051937, #004d7a); */
     /* background-color: rgba(23, 23, 23, 0.4); */
-    background-color: #212121;
+    /* background-image: linear-gradient(to left, #000000, #391f25, #703740, #ac5159, #eb6e6e); */
+    /* background-color: linear-gradient(to right top ,#509791 , #212121); */
     /* background-color: #4e4236; */
     /* background-color: #756213;  */
     /* background-image: linear-gradient(10deg, #756213 10%, #000000 100%); */
+    /* background-image: linear-gradient(to right top, #000000, #3d2627, #77493e, #ad754e); */
+    /* background: linear-gradient(to right,  #343838, rgb(250, 250, 223)); */
+    /* background: linear-gradient(to right, #000000, rgb(114 114 76)); */
+    opacity: 0.7;
 
     transition: 0.5s all ease-in-out;
 }
@@ -102,12 +108,14 @@
     overflow: auto;
     top: 0px;
     right: -275px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #000708;
+    color: #fff;
     width: 275px;
     opacity: 0;
     padding: 20px 0px;
     height: 100%;
-    color: #343838;
+    /* color: #343838; */
     -webkit-transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
     transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
     /* background-image: url(https://www.manufosela.es/shooting_stars/hori.png), url(https://www.manufosela.es/shooting_stars/stars_5.png); */
@@ -176,10 +184,10 @@
 }
 
 .active,
-  .header_links:hover {
+.header_links:hover {
     border-bottom: 2px solid #fff;
     color: #00A7DB;
-  }
+}
 
 .image-change .active,
 .weds-img-div {
@@ -242,70 +250,95 @@
     border: 1px solid #f5ebeb;
 
 }
+
 /* Banner Section Css Open */
-.banner-section{
+.banner-section {
     width: 100%;
     height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: linear-gradient(to right, #000000, rgb(114 114 76)); */
+    background: linear-gradient(to right, #000000, rgb(235 235 15 / 20%) ,seagreen);
+    opacity: 0.7;
 }
-.banner-section h1{
+
+.banner-section h1 {
     color: #fff;
     font-size: 4rem;
 }
-.banner-section p{
+
+.banner-section p {
     color: #fff;
     font-size: 1rem;
 }
-.get-start{
-    background-color: yellowgreen;
+
+.get-start {
+    /* background-color: yellowgreen; */
+    background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%);
     padding: 10px 30px;
     border: none;
     outline: none;
     border-radius: 50px;
 }
-.learn-more{
-    background-color:transparent;
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.learn-more {
+    background-color: transparent;
     padding: 10px 30px;
     border: none;
     outline: none;
     border-radius: 50px;
     color: #fff;
 }
-.learn-more i{
+
+.learn-more i {
     color: #fff;
     font-size: 1em;
 
 }
-.arrow-img{
+
+.arrow-img {
     width: 50px;
     height: 45px;
 }
-.arrow-img img{
+
+.arrow-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.girl-div{
+
+.girl-div {
     width: 100%;
     height: 400px;
 }
-.girl-img-div{
+
+.girl-img-div {
     width: 100%;
-    height: 400px;
+    height: 405px;
 }
-.girl-img-div img{
+
+.girl-img-div img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
+    object-fit: contain;
 }
-.overlay-div{
+
+.overlay-div {
     position: absolute;
     content: "";
     bottom: -195px;
     right: 0px;
-    background: #ffffff05;
+    /* background: #ffffff05; */
+    background-color: #ffffff47;
     width: 100%;
     height: 200px;
     border-radius: 30px;
@@ -313,26 +346,35 @@
     justify-content: center;
     align-items: center;
 }
+
 .overlay-div .counter span {
     color: #ffff;
 }
-.overlay-img-div{
+
+.overlay-div h1 {
+    font-size: 4rem;
+}
+
+.overlay-img-div {
     width: 100px;
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img{
+
+.overlay-img-div-img {
     width: 100px;
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img img{
+
+.overlay-img-div-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100px;
 }
-.overlay-img-div1{
+
+.overlay-img-div1 {
     position: absolute;
     right: -80px;
     bottom: 0px;
@@ -340,18 +382,21 @@
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img1{
+
+.overlay-img-div-img1 {
     width: 100px;
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img1 img{
+
+.overlay-img-div-img1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100px;
 }
-.overlay-img-div2{
+
+.overlay-img-div2 {
     position: absolute;
     right: -150px;
     bottom: 0px;
@@ -359,18 +404,21 @@
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img2{
+
+.overlay-img-div-img2 {
     width: 100px;
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img2 img{
+
+.overlay-img-div-img2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100px;
 }
-.overlay-img-div3{
+
+.overlay-img-div3 {
     position: absolute;
     right: -220px;
     bottom: 0px;
@@ -378,18 +426,21 @@
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img3{
+
+.overlay-img-div-img3 {
     width: 100px;
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img3 img{
+
+.overlay-img-div-img3 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100px;
 }
-.overlay-img-div4{
+
+.overlay-img-div4 {
     position: absolute;
     right: -300px;
     bottom: 0px;
@@ -397,49 +448,222 @@
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img4{
+
+.overlay-img-div-img4 {
     width: 100px;
     height: 100px;
     border-radius: 100px;
 }
-.overlay-img-div-img4 img{
+
+.overlay-img-div-img4 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100px;
 }
-.hot-treading span{
+.hot-treading{
+    background: linear-gradient(to right, #000000, rgb(235 235 15 / 20%) ,seagreen);
+}
+.hot-treading span {
     color: lightgreen;
 }
-.hot-treading h1{
+
+.hot-treading h1 {
     color: #fff;
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
 }
-.hot-treading p{
+
+.hot-treading p {
     color: #fff;
 }
-.round-div{
-    width: 100%;
+
+.round-div {
+    /* width: 100%; */
+    width: 300px;
+    margin: auto;
     height: 200px;
-    background-color: #00A7DB;
+    /* background-color: #00A7DB; */
+    background: linear-gradient(to bottom, #4d4d4d 10%, #24180d 100%);
     border-radius: 30px;
+    /* overflow: hidden; */
 }
-.round-div-img{
+
+.round-div-img {
     width: 100%;
-    height: 200px; 
+    height: 222px;
+    transform: translate(1px, -16px);
 }
-.round-div-img img{
+
+.round-div-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.round-div1 {
+    width: 300px;
+    /* margin-right: auto; */
+    margin: auto;
+    height: 200px;
+    /* background-color: #d6e8ee; */
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #4d4d4d 10%, #24180d 100%);
+}
+.round-div2 {
+    width: 300px;
+    /* margin-right: auto; */
+    margin: auto;
+    height: 200px;
+    /* background-color: #d6e8ee; */
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #4d4d4d 10%, #24180d 100%);
+}
+.round-div3 {
+    width: 300px;
+    /* margin-right: auto; */
+    margin: auto;
+    height: 200px;
+    /* background-color: #d6e8ee; */
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #4d4d4d 10%, #24180d 100%);
+}
+
+.top-list-artist {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+.top-list-artist span {
+    color: lightgreen;
+}
+
+.top-list-artist h1 {
+    color: #fff;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.top-list-artist p {
+    color: #fff;
+}
+
+.top-list-artist .rounded {
+    height: 300px;
+    /* background-color: #00A7DB; */
+    width: 100%;
+    position: relative;
+}
+
+.circle-outer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #000708;
+    z-index: 1;
+}
+
+.circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50px;
 }
-.round-div1{
+
+.rounded-inner {
+    height: 250px;
     width: 100%;
-    height: 200px;
-    background-color: #d6e8ee;
-    border-radius: 30px;
+    /* background-color: #fff; */
+    /* background: #ffffff05; */
+    background-color: #ffffff40;
+    position: absolute;
+    bottom: 0px;
+    z-index: 0;
+    border-radius: 40px;
 }
+
+.rounded-bottom {
+    position: absolute;
+    bottom: 0px;
+    height: 135px;
+    /* background-color: #00A7DB; */
+    z-index: 1;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.rounded-bottom-img {
+    height: 135px;
+    /* background-color: #00A7DB; */
+    z-index: 1;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.rounded-bottom-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.logo-img-com {
+    width: 200px;
+    height: 100px;
+}
+.subscribe-div , .footer , .logo-div , .top-list-artist{
+    background: linear-gradient(to right, #000000, rgb(235 235 15 / 10%) ,lightblue);
+}
+
+.logo-img-com img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sub {
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.footer {
+    padding-top: 5rem;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer ul li {
+    padding-bottom: 0.5rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer i {
+    color: #fff;
+}
+
+.footer .icon {
+    margin-right: 2rem;
+}
+
 /* Banner Section Css Closed */
 
 
@@ -519,7 +743,7 @@
 
     #items a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         font-family: "Mont-Light";
         font-size: 15px;
     }
@@ -550,7 +774,7 @@
 
     #items a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         font-family: "Mont-Light";
         font-size: 15px;
     }
@@ -586,13 +810,104 @@
 
     #items a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         font-family: "Mont-Light";
         font-size: 15px;
     }
 }
 
-@media only screen and (max-width:375px) {}
+@media only screen and (max-width:375px) {
+    .banner-section {
+        width: 100%;
+        height: 1170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .Center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon-main-div {
+        justify-content: center;
+        display: flex;
+    }
+
+    .counter {
+        text-align: center;
+    }
+
+    .overlay-div h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .overlay-div {
+        padding-top: 1.5rem;
+    }
+
+    .overlay-img-div-img,
+    .overlay-img-div-img1,
+    .overlay-img-div-img2,
+    .overlay-img-div-img3,
+    .overlay-img-div-img4,
+    .overlay-img-div-img5 {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+    }
+
+    .overlay-img-div {
+        width: 50px;
+        height: 100px;
+        border-radius: 100px;
+    }
+
+    .overlay-img-div2 {
+        right: -109px;
+    }
+
+    .overlay-img-div3 {
+        right: -140px;
+    }
+
+    .overlay-img-div4 {
+        right: -180px;
+    }
+
+    .overlay-div {
+        position: absolute;
+        content: "";
+        bottom: -355px;
+        right: 0px;
+        background: #ffffff05;
+        width: 100%;
+        height: 350px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .girl-img-div {
+        display: none;
+    }
+
+    .main-div-flex {
+        width: 70%;
+        margin: auto;
+    }
+
+    .overlay-div {
+        bottom: -25px;
+    }
+}
 
 @media only screen and (max-width:360px) {}
 

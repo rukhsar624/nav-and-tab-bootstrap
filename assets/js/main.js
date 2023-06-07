@@ -23,7 +23,7 @@ $(window).scroll(function () {
       $(".destop-nav-bar .logo h1").css("color", "#ffffff");
       $(".destop-nav-bar .header_links.active").css(
         "border-bottom",
-        "2px solid #9C6DA5"
+        "2px solid #fff"
       );
       $(".hamburger div").css(
         "background", "#000"
@@ -42,7 +42,7 @@ $(window).scroll(function () {
       $(".destop-nav-bar .logo h1").css("color", "#1a1a1a");
       $(".destop-nav-bar .header_links.active").css(
         "border-bottom",
-        "2px solid #9C6DA5"
+        "2px solid #fff"
       );
       $(".hamburger div").css(
         "background", "red"
@@ -89,3 +89,26 @@ $(window).scroll(function () {
 //========================Navbar Js Closed==================//
 
 // =====================shooting star ==================== //
+/* ==========================counter up to number js open========================== */
+$(".counter1").each(function () {
+	var $this = $(this),
+	  countTo = $this.attr("data-countto");
+	countDuration = parseInt($this.attr("data-duration"));
+	$({ counter: $this.text() }).animate(
+	  {
+		counter: countTo
+	  },
+	  {
+		duration: countDuration,
+		easing: "linear",
+		step: function () {
+		  $this.text(Math.floor(this.counter));
+		},
+		complete: function () {
+		  $this.text(this.counter);
+		}
+	  }
+	);
+  });
+  
+/* ==========================counter up to number js closed========================== */
