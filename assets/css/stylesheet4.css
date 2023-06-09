@@ -4,9 +4,11 @@
     box-sizing: border-box;
     list-style: none;
 }
-body{
-    background-color: #000
+
+body {
+    background-color: #000;
 }
+
 /* html, body {
     overflow: hidden;
     font: 16px/1.4 'Lato', sans-serif;
@@ -316,126 +318,235 @@ body{
     border: none;
 
 }
-.cstm-button{
+
+.cstm-button {
     background-color: #343838;
 }
 
 
 
-.constrain{
+.constrain {
     max-width: 300px;
     padding: 60px;
     margin: 0 auto;
-  }
-  
-  input{
+}
+
+input {
     margin-bottom: 40px;
-  }
-  
-  .input-elevated{
-  font-size: 16px;
-  line-height: 1.5;
-  border: none;
-  color: #fff;
-  background-color: #343838;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path fill='%23838D99' d='M13.22 14.63a8 8 0 1 1 1.41-1.41l4.29 4.29a1 1 0 1 1-1.41 1.41l-4.29-4.29zm-.66-2.07a6 6 0 1 0-8.49-8.49 6 6 0 0 0 8.49 8.49z'></path></svg>");
-  background-repeat: no-repeat;
-  background-position: 10px 10px;
-  background-size: 20px 20px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
-  border-radius: 5px;
-  width: 100%;
-  padding: .5em 1em .5em 2.5em;
-  } 
-  
-  .input-elevated::placeholder{
+}
+
+.input-elevated {
+    font-size: 16px;
+    line-height: 1.5;
+    border: none;
     color: #fff;
-  }
-  
-  .input-elevated:focus {
+    background-color: #343838;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path fill='%23838D99' d='M13.22 14.63a8 8 0 1 1 1.41-1.41l4.29 4.29a1 1 0 1 1-1.41 1.41l-4.29-4.29zm-.66-2.07a6 6 0 1 0-8.49-8.49 6 6 0 0 0 8.49 8.49z'></path></svg>");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-size: 20px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    width: 100%;
+    padding: .5em 1em .5em 2.5em;
+}
+
+.input-elevated::placeholder {
+    color: #fff;
+}
+
+.input-elevated:focus {
     outline: none;
     color: #ffff;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.16);
-  }
-  
-  .banner-section{
-    background-image: url('../images/146255-shoe-black-darkness-nike-graphic_design-x750.jpg');
-    background-position: center;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
+}
+
+.banner-section {
+    position: relative;
+    /* background-image: url('../images/146255-shoe-black-darkness-nike-graphic_design-x750.jpg'); */
+    /* background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     height: 900px;
     width: 100%;
     display: flex;
     justify-items: center;
     align-items: center;
 
-  }
-.color1{
+}
+
+.nike {
+    position: absolute;
+    content: "";
+    background-image: url('../images/146255-shoe-black-darkness-nike-graphic_design-x750.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    right: 0px;
+    background-color: #fff;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color1 {
     width: 20px;
     height: 20px;
     border-radius: 20px;
     background-color: blueviolet;
-}  
-.color2{
+}
+
+.color2 {
     width: 20px;
     height: 20px;
     border-radius: 20px;
     background-color: palegreen;
     margin-left: 10px;
 }
-.color3{
+
+.color3 {
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color:palegoldenrod;
+    background-color: palegoldenrod;
     margin-left: 10px;
 }
-.color4{
+
+.color4 {
     width: 20px;
     height: 20px;
     border-radius: 20px;
     background-color: rebeccapurple;
     margin-left: 10px;
 }
-.text{
+
+.text {
     margin-left: 10px;
     color: #fff;
 }
-.text1{
+
+.text1 {
     color: #fff;
 }
-.buy-button{
+
+.buy-button {
     background-color: brown;
     color: #ffff;
-    padding: 10px 50px ;
+    padding: 10px 50px;
     border: none;
     outline: none;
     text-transform: capitalize;
 
 }
-.shoe{
+
+.shoe {
     width: 100%;
     height: 500px;
 }
-.shoe-inner{
+
+.shoe-inner {
     width: 100%;
     height: 500px;
+    animation: MoveUpDown 5s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
-.shoe-inner img{
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 100px;
+    }
+}
+
+.shoe-inner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.banner-section h1{
-    color: #fff;
-}
-.banner-section span{
-    color: #eb1ceb73;
-}
-.banner-section h6{
+
+.banner-section h1 {
     color: #fff;
 }
 
+.banner-section span {
+    color: #eb1ceb73;
+}
+
+.banner-section h6 {
+    color: #fff;
+}
+/* .square-div{
+    width: 160px;
+    height: 100px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    transform: skew(328deg);
+} */
+.square-div {
+    width: 120px;
+    height: 130px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    transform: skew(328deg);
+}
+.square {
+    width: 200px;
+    height: 118px;
+    transform: translate(-56px, -6px);
+}
+/* .square{
+    width: 160px;
+    height: 100px; 
+    transform: translate(1px, -16px);
+} */
+.square img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.square-div1{
+    width: 160px;
+    height: 100px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    transform: skew(328deg);
+    /* margin-left: 4rem; */
+}
+.square-div2{
+    width: 160px;
+    height: 100px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    transform: skew(328deg);
+}
+#check {
+    fill: none;
+    stroke: green;
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+    animation: draw 2s infinite ease;
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 
 
 
@@ -592,12 +703,7 @@ body{
     }
 }
 
-@media only screen and (max-width:375px) {
-    
-    
-
-
-}
+@media only screen and (max-width:375px) {}
 
 @media only screen and (max-width:360px) {}
 
