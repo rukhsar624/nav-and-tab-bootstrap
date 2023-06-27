@@ -558,4 +558,73 @@ window.onload = function() {
 // check 
 
 
+function drawFreeHand() {
+
+    //the polygon
+    poly = new google.maps.Polyline({ map: map, clickable: false });
+
+    //move-listener
+    var move = google.maps.event.addListener(map, 'mousemove', function (e) {
+        poly.getPath().push(e.latLng);
+    });
+
+    //mouseup-listener
+    google.maps.event.addListenerOnce(map, 'mouseup', function (e) {
+        google.maps.event.removeListener(move);
+        var path = poly.getPath();
+        poly.setMap(null);
+        poly = new google.maps.Polygon({ map: map, path: path });
+
+
+        google.maps.event.clearListeners(map.getDiv(), 'mousedown');
+
+        enable()
+    });
+}
+
+function disable() {
+    map.setOptions({
+        draggable: false,
+        zoomControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: false
+    });
+}
+
+function enable() {
+    map.setOptions({
+        draggable: true,
+        zoomControl: true,
+        scrollwheel: true,
+        disableDoubleClickZoom: true
+    });
+}
+
+
+function initialize() {
+    var mapOptions = {
+        zoom: 14,
+        center: new google.maps.LatLng(52.5498783, 13.425209099999961),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+    //draw
+    $("#drawpoly a").click(function (e) {
+        e.preventDefault();
+        console.log('drawpoly' ,'hello');
+
+        disable()
+
+        google.maps.event.addDomListener(map.getDiv(), 'mousedown', function (e) {
+            drawFreeHand()
+        });
+
+    });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
 
